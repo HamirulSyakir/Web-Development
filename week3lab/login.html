@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Week 3 Lab Deliverables</title>
+</head>
+<body>
+<table width="100%" border="0" cellpadding="20">
+  <tr>
+    <td colspan="2" bgcolor="darkcyan">
+      <h1><font color="ffffff" face="verdana">Login</font></h1>
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="Aquamarine" width="200" height="600">
+      <object name="menu" type="text/html" data="menu.html" height="600" /> 
+    </td>
+    <td width="*" valign="top">
+    <font size="6" face="Lucida Console">Login</font>
+    <hr>
+<form action="http://lrgs.ftsm.ukm.my/users/a123456/week3lab/process_login.php" method="post" enctype="multipart/form-data">
+  <table border="1" cellpadding="10">
+    <tr>
+      <td>Username:</td>
+      <td><input type="username" name="username" placeholder="insert your username" autofocus required></td>
+    </tr>
+    <tr>
+      <td>Password:</td>
+      <td><input type="password" name="password"  placeholder="insert your password" autofocus required>
+      </td>
+    </tr>
+  </table>
+<hr>
+<input type="hidden" name="matricnum" value="a189563">
+<!-- put your buttons here -->
+<input type="submit" name="login_form" value="Login">
+<input type="reset" name="Reset" value="Reset">
+
+</form>
+</body>
+</html>

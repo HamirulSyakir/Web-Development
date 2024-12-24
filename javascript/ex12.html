@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function genPattern() {
+  var i, j, k;
+  k = 1;
+  for (i = 1; i <= 4; i++) {
+    for (j = i; j < 4; j++) {
+      document.write("&nbsp;" + "&nbsp;");
+    }
+    for (j = 1; j <= i; j++) {
+      document.write(k + "&nbsp;" + "&nbsp;");
+      k++;
+    }
+    document.write("<br>");
+  }
+  return false; // Add this line to prevent the form from submitting
+}
+</script>
+</head>
+<body>
+<input type="button" onclick="genPattern()" value="Click me to check output">
+</body>
+</html>

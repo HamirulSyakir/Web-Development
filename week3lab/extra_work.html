@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Week 3 Lab Deliverables</title>
+</head>
+<body>
+<table width="100%" border="0" cellpadding="20">
+  <tr>
+    <td colspan="2" bgcolor="darkcyan">
+      <h1><font color="ffffff" face="verdana">Extra Work</font></h1>
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="Aquamarine" width="200" height="600">
+      <object name="menu" type="text/html" data="menu.html" height="600" /> 
+    </td>
+    <td width="*" valign="top">
+    <font size="6" face="Lucida Console">Extra Work</font>
+    <hr>
+<form action="http://lrgs.ftsm.ukm.my/users/a123456/week3lab/validate_biodata.php" method="post" enctype="multipart/form-data">
+  <table border="1" cellpadding="10">
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" name="name" pattern="[a-zA-Z]+( [a-zA-Z]+)*" placeholder="Insert your name" autofocus required>
+    </tr>
+    <tr>
+      <td>Age:</td>
+      <td><input type="number" name="age" min="0" max="100" step="1">
+    </tr>
+    <tr>
+      <td>Sex:</td>
+      <td><label for="male">Male</label>
+    <input type="radio" id="male" name="sex" value="male">
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="sex" value="female">
+    </tr>
+    <tr>
+      <td>Address:</td>
+      <td><textarea name="address" cols="50" rows="5" placeholder="Insert your address"></textarea>
+    </tr>
+    <!-- complete the rest of form here -->
+     <tr>
+      <td>Email:</td>
+      <td><input type="email" name="email" pattern=".*ukm.*"placeholder="Insert your email" required>
+    </tr>
+    <td>Date Of Birth:</td>
+      <td><input type="datetime-local" name="dob" required>
+    </tr>
+    <tr>
+      <td>Height:</td>
+      <td><input type="range" id="heightId" name="height" min="0" max="200" step="1" value="159" disabled>
+    </tr>
+     <tr>
+      <td>Tel:</td>
+      <td><input input type="tel" name="phone" placeholder="+60##-#######" pattern="^\+60\d{2}-\d{7,8}$" autofocus></td>
+     </tr>
+    <tr>
+      <td>My Favourite Color:</td>
+      <td><input type="color" name="color" value="#00ff00" autofocus>
+    </tr>
+    <tr>
+      <td>FB/TW/IG:</td>
+      <td><input type="url" name="fbtwig" placeholder="insert the url" autofocus>
+    </tr>
+    <tr>
+      <td>My Face Photo:</td>
+      <td><input type="file" name="photo" accept="image/*" autofocus>
+    </tr>
+    <tr>
+     <td>My University:</td>
+      <td><Select name = "university">
+        <option value="" selected>Select</option>
+        <option value="UKM" selected>Universiti Kebangsaan Malaysia</option>
+        <option value="UM">Universiti Malaya</option>
+        <option value="UPM">Universiti Putra Malaysia</option>
+        <option value="USM">Universiti Sains Malaysia</option>
+        <option value="UTM">Universiti Teknologi Malaysia</option>
+      </Select>
+    </tr>
+  </table>
+<hr>
+<input type="hidden" name="matricnum" value="a189563">
+<button type="submit" name="biodata_form">Submit My Biodata</button>
+<input type="reset" name="Reset" value="Reset">
+</form>
+ 
+</body>
+</html>
